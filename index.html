@@ -29,7 +29,7 @@
                             <input id="triangle-base" class="w-16 text-lg px-2 rounded-md bg-gray-100" type="text" placeholder="b"><span class="mx-2 text-lg font-medium">cm</span>
                             <input id="triangle-height" class="w-16 text-lg px-2 rounded-md bg-gray-100" type="text" placeholder="h"><span class="mx-2 text-lg font-medium">cm</span>
                         </div>
-                        <div>
+                        <div class="text-center">
                             <p class="text-xl font-medium">Area: <span id="triangle-area" class="text-amber-500 px-2"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions">
@@ -47,7 +47,7 @@
                             <input id="rectangle-width" class="w-16 text-lg px-2 rounded-md bg-gray-100" type="text" placeholder="w"><span class="mx-2 text-lg font-medium">cm</span>
                             <input id="rectangle-length" class="w-16 text-lg px-2 rounded-md bg-gray-100" type="text" placeholder="l"><span class="mx-2 text-lg font-medium">cm</span>
                         </div>
-                        <div>
+                        <div class="text-center">
                             <p class="text-xl font-medium">Area: <span id="rectangle-area" class="text-amber-500 px-2"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
@@ -62,11 +62,14 @@
                         <h2 class="card-title text-2xl justify-center font-bold">Parallelogram</h2>
                         <p class="text-lg text-center font-medium">Area (A) = w x l</p>
                         <div class="pt-2 pb-5 text-center">
-                            <input class="w-16 text-lg px-2 rounded-md bg-gray-100" type="text" placeholder="b"><span class="mx-2 text-lg font-medium">cm</span>
-                            <input class="w-16 text-lg px-2 rounded-md bg-gray-100" type="text" placeholder="h"><span class="mx-2 text-lg font-medium">cm</span>
+                            <input class="w-16 text-lg px-2 rounded-md bg-gray-100" id="parallelogram-base" type="text" placeholder="b"><span class="mx-2 text-lg font-medium">cm</span>
+                            <input class="w-16 text-lg px-2 rounded-md bg-gray-100" id="parallelogram-height" type="text" placeholder="h"><span class="mx-2 text-lg font-medium">cm</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-xl font-medium">Area: <span id="parallelogram-area" class="text-amber-500 px-2"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary text-xl w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary text-xl w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -90,13 +93,16 @@
                     <figure><img class="p-5 h-48" src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-2xl justify-center font-bold">Pentagon</h2>
-                        <p class="text-lg text-center font-medium">Area (A) = 0.5 x p x b</p>
+                        <p class="text-lg text-center font-medium">Area (A) = 0.5 x p x a</p>
                         <div class="pt-2 pb-5 text-center">
-                            <input class="w-16 text-lg px-2 rounded-md bg-gray-100" type="text" placeholder="p"><span class="mx-2 text-lg font-medium">cm</span>
-                            <input class="w-16 text-lg px-2 rounded-md bg-gray-100" type="text" placeholder="b"><span class="mx-2 text-lg font-medium">cm</span>
+                            <input class="w-16 text-lg px-2 rounded-md bg-gray-100" id="pentagon-perimeter" type="text" placeholder="p"><span class="mx-2 text-lg font-medium">cm</span>
+                            <input class="w-16 text-lg px-2 rounded-md bg-gray-100" id="pentagon-apothem" type="text" placeholder="a"><span class="mx-2 text-lg font-medium">cm</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-xl font-medium">Area: <span id="pentagon-area" class="text-amber-500 px-2"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary text-xl w-full">Calculate</button>
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary text-xl w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
